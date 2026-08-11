@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/checkout.css">
+  <title>Novart: Checkout</title>
+</head>
+
+<body>
+  <header class="checkout-header">
+    <a href="index.html" class="checkout-logo"><img src="img/logo.trans.png" alt=""></a>
+  </header>
+
+  <main class="checkout-layout">
+    <section class="checkout-form-side">
+      <div class="checkout-content">
+        <div class="express-checkout">
+          <p class="text-center text-secondary mb-3">Express checkout</p>
+
+          <div class="express-checkout-buttons">
+            <button class="shop-pay-button" type="button">shop <b>Pay</b></button>
+            <button class="paypal-button" type="button">PayPal</button>
+            <button class="apple-pay-button" type="button">
+              <i class="bi bi-apple"></i> Pay
+            </button>
+          </div>
+        </div>
+
+        <div class="checkout-or">
+          <span>OR</span>
+        </div>
+
+        <form>
+          <div class="checkout-section-title">
+            <h2>Contact</h2>
+            <a href="#">Sign in</a>
+          </div>
+
+          <input class="form-control checkout-input" type="email" placeholder="Email">
+
+          <label class="checkout-checkbox">
+            <input class="custom-checkbox" type="checkbox" checked>
+            <span>Email me with news and offers</span>
+          </label>
+
+          <h2 class="mt-5">Delivery</h2>
+
+          <select class="form-select checkout-input">
+            <option>United States</option>
+            <option>Ukraine</option>
+            <option>Polish</option>
+          </select>
+
+          <div class="row g-2">
+            <div class="col-6">
+              <input class="form-control checkout-input" type="text" placeholder="First name">
+            </div>
+
+            <div class="col-6">
+              <input class="form-control checkout-input" type="text" placeholder="Last name">
+            </div>
+          </div>
+
+          <input class="form-control checkout-input" type="text" placeholder="Company (optional)">
+          <input class="form-control checkout-input" type="text" placeholder="Address">
+          <input class="form-control checkout-input" type="text" placeholder="Apartment, suite, etc. (optional)">
+
+          <div class="row g-2">
+            <div class="col-5">
+              <input class="form-control checkout-input" type="text" placeholder="City">
+            </div>
+
+            <div class="col-3">
+              <input class="form-control checkout-input" type="text" placeholder="State">
+            </div>
+
+            <div class="col-4">
+              <input class="form-control checkout-input" type="text" placeholder="ZIP code">
+            </div>
+          </div>
+
+          <h2 class="mt-5">Payment</h2>
+          <p class="text-secondary">All transactions are secure and encrypted.</p>
+
+          <div class="payment-method">
+            <label>
+              <input type="radio" name="payment" value="card" checked>
+              <strong>Credit card</strong>
+            </label>
+
+            <div class="payment-cards">
+              <img class="card-icon" src="img/visa.svg" alt="">
+              <img class="card-icon" src="img/mastercard.svg" alt="">
+            </div>
+
+          </div>
+
+          <div id="cardFields" class="card-fields">
+            <input class="form-control checkout-input" type="text" placeholder="Card number">
+
+            <div class="row g-2">
+              <div class="col-6">
+                <input class="form-control checkout-input" type="text" placeholder="Expiration date (MM / YY)">
+              </div>
+
+              <div class="col-6">
+                <input class="form-control checkout-input" type="text" placeholder="Security code">
+              </div>
+            </div>
+
+            <input class="form-control checkout-input" type="text" placeholder="Name on card">
+          </div>
+
+          <label class="payment-method">
+            <input type="radio" name="payment" value="shop-pay">
+            <strong>Shop Pay</strong>
+            <div class="payment-cards">
+              <img class="card-icon-apple" src="img/shop.svg" alt="">
+            </div>
+          </label>
+
+          <label class="payment-method">
+            <input type="radio" name="payment" value="apple-pay">
+            <strong>Apple Pay</strong>
+            <div class="payment-cards">
+              <img class="card-icon-apple" src="img/apple.svg" alt="">
+            </div>
+          </label>
+
+          <label class="payment-method">
+            <input type="radio" name="payment" value="paypal">
+            <strong>PayPal</strong>
+            <div class="payment-cards">
+              <img class="card-icon-apple" src="img/paypal.svg" alt="">
+            </div>
+          </label>
+
+          <button class="btn btn-dark w-100 py-3 mt-5 fw-bold" type="button">
+            Pay now
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <aside class="checkout-summary-side">
+      <div class="checkout-summary">
+        <div id="checkoutProducts"></div>
+
+        <div class="discount-row">
+          <input class="form-control" type="text" placeholder="Discount code or gift card">
+          <button class="btn btn-light border" type="button">Apply</button>
+        </div>
+
+        <div class="summary-line">
+          <span>Subtotal · <span id="checkoutItemCount">0</span> items</span>
+          <span id="checkoutSubtotal">$0.00</span>
+        </div>
+
+        <div class="summary-line">
+          <span>Shipping</span>
+          <span id="checkoutShipping">FREE</span>
+        </div>
+
+        <div class="summary-total">
+          <span>Total</span>
+
+          <span>
+            <small>USD</small>
+            <strong id="checkoutGrandTotal">$0.00</strong>
+          </span>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+
+
+
+
+
+  <script src="js/checkout.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
