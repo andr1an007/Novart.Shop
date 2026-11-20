@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       isNew: true
     },
     {
-      name: "MEN'S ALLBIRDS SLIDE",
+      name: "MEN'S NOVART SLIDE",
       colorName: "Natural Black",
       colors: ["Black"],
       price: 27,
