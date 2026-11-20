@@ -290,6 +290,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderProducts();
   });
 
+  
   renderProducts();
 });
 
