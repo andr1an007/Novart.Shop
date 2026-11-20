@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       isNew: true
     },
     {
-      name: "WOMEN'S ALLBIRDS SLIDE",
+      name: "WOMEN'S NOVART SLIDE",
       colorName: "Anthracite",
       colors: ["Beige"],
       url: "productwom.html",
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
       isNew: true
     },
     {
-      name: "MEN'S ALLBIRDS SLIDE",
+      name: "MEN'S NOVART SLIDE",
       colorName: "Natural Black",
       colors: ["Black"],
       price: 27,
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
       isNew: true
     },
     {
-      name: "WOMEN'S ALLBIRDS FLIP FLOP",
+      name: "WOMEN'S NOVART FLIP FLOP",
       colorName: "Mushroom",
       colors: ["Beige"],
       price: 25,
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
       isNew: true
     },
     {
-      name: "WOMEN'S ALLBIRDS FLIP FLOP",
+      name: "WOMEN'S NOVART FLIP FLOP",
       colorName: "Natural Black",
       colors: ["Back"],
       price: 25,
@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
       isNew: true
     },
     {
-      name: "WOMEN'S ALLBIRDS FLIP FLOP",
+      name: "WOMEN'S NOVART FLIP FLOP",
       colorName: "Anthracite",
       colors: ["Grey"],
       price: 25,
