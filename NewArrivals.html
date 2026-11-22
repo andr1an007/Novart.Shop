@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Novart Demo Store: New Arrivals</title>
+  <link rel="stylesheet" href="css/demo-banner.css">
+</head>
+
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Novart home"><img class="logo" src="img/logo.trans.png" alt=""></a>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="NewArrivals.html">NEW ARRIVALS</a>
+    <a href="All.html">SHOP ALL</a>
+
+
+    <div class="nav-item has-mega-menu">
+      <button class="nav-trigger" type="button" aria-expanded="false">
+        MEN
+      </button>
+
+      <div class="mega-menu">
+        <div class="mega-menu-title">Men's</div>
+
+        <div class="mega-menu-grid">
+          <div class="mega-column mega-featured-links">
+            <a href="NewArrivalsMen.html">NEW ARRIVALS</a>
+            <a href="BestSellersMen.html">BESTSELLERS</a>
+            <a href="AllMen.html">LEATHER ALTERNATIVES</a>
+            <a href="AllMen.html">SPRINT COLLECTION</a>
+            <a href="AllMen.html">CAMPUS COLLECTION</a>
+          </div>
+
+          <div class="mega-column">
+            <h3>MEN'S SHOES</h3>
+            <a href="AllMen.html">Shop All</a>
+            <a href="AllMen.html">Sneakers</a>
+            <a href="AllMen.html">Slip Ons</a>
+            <a href="AllMen.html">Slippers</a>
+            <a href="AllMen.html">Sandals</a>
+            <a href="AllMen.html">Active</a>
+            <a href="AllMen.html">All-Weather</a>
+          </div>
+
+          <div class="mega-column">
+            <h3>CUSTOMER FAVORITES</h3>
+            <a href="AllMen.html">Flow Runner</a>
+            <a href="AllMen.html">Drift</a>
+            <a href="AllMen.html">Aero Runner</a>
+            <a href="AllMen.html">Campus</a>
+          </div>
+
+          <div class="mega-column">
+            <h3>APPAREL & ACCESSORIES</h3>
+            <a href="AllMen.html">Socks</a>
+            <a href="AllMen.html">Men's Apparel</a>
+          </div>
+        </div>
+
+        <a class="mega-shop-all" href="AllMen.html">SHOP ALL MEN</a>
+      </div>
+    </div>
+
+
+    <div class="nav-item has-mega-menu">
+      <button class="nav-trigger" type="button" aria-expanded="false">
+        WOMEN
+      </button>
+
+      <div class="mega-menu">
+        <div class="mega-menu-title">Women's</div>
+
+        <div class="mega-menu-grid">
+          <div class="mega-column mega-featured-links">
+            <a href="NewArrivalsWomen.html">NEW ARRIVALS</a>
+            <a href="BestSellersWomen.html">BESTSELLERS</a>
+            <a href="AllWomen.html">LEATHER ALTERNATIVES</a>
+            <a href="AllWomen.html">SPRINT COLLECTION</a>
+            <a href="AllWomen.html">CAMPUS COLLECTION</a>
+          </div>
+
+          <div class="mega-column">
+            <h3>WOMEN'S SHOES</h3>
+            <a href="AllWomen.html">Shop All</a>
+            <a href="AllWomen.html">Sneakers</a>
+            <a href="AllWomen.html">Slip Ons</a>
+            <a href="AllWomen.html">Flats</a>
+            <a href="AllWomen.html">Slippers</a>
+            <a href="AllWomen.html">Sandals</a>
+          </div>
+
+          <div class="mega-column">
+            <h3>CUSTOMER FAVORITES</h3>
+            <a href="AllWomen.html">Flow Runner</a>
+            <a href="AllWomen.html">Drift</a>
+            <a href="AllWomen.html">Aero Runner</a>
+            <a href="AllWomen.html">Campus</a>
+          </div>
+
+          <div class="mega-column">
+            <h3>APPAREL & ACCESSORIES</h3>
+            <a href="AllWomen.html">Socks</a>
+            <a href="AllWomen.html">Women's Apparel</a>
+          </div>
+        </div>
+
+        <a class="mega-shop-all" href="AllWomen.html">SHOP ALL WOMEN</a>
+      </div>
+    </div>
+
+
+    <div class="nav-item has-mega-menu">
+      <button class="nav-trigger" type="button" aria-expanded="false">
+        SALE
+      </button>
+
+      <div class="mega-menu mega-menu-small">
+        <div class="mega-menu-title">Sale</div>
+
+        <div class="mega-menu-grid">
+          <div class="mega-column">
+            <h3>SHOP SALE</h3>
+            <a href="SaleMen.html">Men's Sale</a>
+            <a href="SaleWomen.html">Women's Sale</a>
+            <a href="SaleAccessories.html">Accessories Sale</a>
+          </div>
+        </div>
+
+        <a class="mega-shop-all" href="Sale.html">SHOP ALL SALE</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="header-actions">
+    <a class="icon-button" href="search.html"><i class="bi bi-search"></i></a>
+
+    <button class="btn btn-link text-dark position-relative p-2" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#cartDrawer" aria-controls="cartDrawer" aria-label="Open shopping cart">
+      <i class="bi bi-bag fs-4"></i>
+      <span id="cartBadge" class="cart-badge d-none">0</span>
+    </button>
+
+
+    <div class="offcanvas offcanvas-end cart-drawer" tabindex="-1" id="cartDrawer" aria-labelledby="cartDrawerLabel">
+      <div class="offcanvas-header border-bottom">
+        <h2 class="h6 fw-bold mb-0" id="cartDrawerLabel">
+          CART (<span id="cartHeaderCount">0</span>)
+        </h2>
+
+        <span id="shippingMessage" class="small text-secondary text-center flex-grow-1">
+          Spend $100 more to earn free shipping!
+        </span>
+
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+
+      <div class="px-3 pt-2">
+        <div class="progress cart-progress" role="progressbar">
+          <div id="shippingProgress" class="progress-bar bg-dark" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <div class="offcanvas-body p-0 d-flex flex-column">
+        <section id="emptyCart" class="empty-cart text-center">
+          <h3 class="h4 fw-semibold mb-5">Your cart is empty. Start shopping!</h3>
+
+          <div class="d-grid gap-3 px-5">
+            <a href="AllWomen.html" class="btn btn-dark rounded-pill fw-bold">SHOP WOMEN'S</a>
+            <a href="AllMen.html" class="btn btn-dark rounded-pill fw-bold">SHOP MEN'S</a>
+            <a href="SaleWomen.html" class="btn btn-dark rounded-pill fw-bold">SHOP WOMEN'S SALE</a>
+            <a href="SaleMen.html" class="btn btn-dark rounded-pill fw-bold">SHOP MEN'S SALE</a>
+          </div>
+        </section>
+
+        <section id="filledCart" class="d-none d-flex flex-column flex-grow-1">
+          <div id="cartItems"></div>
+          <div class="cart-summary">
+            <div class="d-flex justify-content-between fw-bold mb-2">
+              <span>Subtotal</span>
+              <span id="subtotal">$0.00</span>
+            </div>
+
+            <div class="d-flex justify-content-between mb-4">
+              <span class="fw-bold">Shipping</span>
+              <span id="shipping">$5.00</span>
+            </div>
+
+            <a href="checkout.html" class="btn btn-dark w-100 rounded-pill py-3 fw-bold">Checkout <span
+                id="checkoutTotal">$0.00</span></a>
+
+            <a href="checkout.html" class="d-block text-center text-dark mt-3 small"
+              style="text-decoration: underline;">
+              Checkout without free returns
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <button class="icon-button mobile-menu-toggle" type="button" aria-label="Open mobile menu" aria-expanded="false">
+      <i class="bi bi-list"></i>
+    </button>
+  </div>
+</header>
+
+<div class="menu-backdrop"></div>
+
+
+
+
+
+
+<body>
+  <section class="heroOne">
+    <img class="hero-imageOne" src="img/newarrivals.png" alt="">
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <a href="NewArrivals.html">New Arrivals</a>
+    </nav>
+
+    <div class="hero-contentOne">
+      <h1>New Arrivals</h1>
+      <p class="hero-subtitleOne">
+        Start the season with comfort, style, and versatility.
+      </p>
+    </div>
+  </section>
+
+
+
+
+
+  <main class="shop-page container-fluid px-3 px-lg-5 py-4">
+
+    <section class="toolbar d-flex align-items-center justify-content-between gap-3">
+      <button class="filter-toggle btn p-0 d-flex align-items-center gap-2" type="button">
+        <span class="icon-circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-sliders-horizontal-icon lucide-sliders-horizontal">
+            <path d="M10 5H3" />
+            <path d="M12 19H3" />
+            <path d="M14 3v4" />
+            <path d="M16 17v4" />
+            <path d="M21 12h-9" />
+            <path d="M21 19h-5" />
+            <path d="M21 5h-7" />
+            <path d="M8 10v4" />
+            <path d="M8 12H3" />
+          </svg></span>
+        <span class="toolbar-label">FILTER</span>
+        <span class="product-count">(9 products)</span>
+      </button>
+
+      <label class="sort-control">
+        SORT BY
+
+        <select id="sortSelect" class="form-select form-select-sm">
+          <option value="featured">FEATURED</option>
+          <option value="price-low">PRICE: LOW TO HIGH</option>
+          <option value="price-high">PRICE: HIGH TO LOW</option>
+          <option value="name">NAME: A–Z</option>
+        </select>
+      </label>
+    </section>
+
+    <section id="filterPanel" class="filter-panel" hidden>
+
+      <div class="filter-panel-head d-flex justify-content-between align-items-center">
+        <button class="close-filter btn p-0" type="button">
+          ✕ &nbsp; COLLAPSE FILTERS
+          <span class="product-count">(9 products)</span>
+        </button>
+
+        <button id="clearFilters" class="clear-button btn p-0" type="button">
+          Clear all
+        </button>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-5 col-xl-3">
+          <h2>SIZE</h2>
+
+          <p class="filter-copy">
+            Most of our shoes only come in full sizes. If you're a half size,
+            select your nearest whole size too.
+          </p>
+
+          <div class="size-grid">
+            <button class="size-button" data-size="S" type="button">S</button>
+            <button class="size-button" data-size="M" type="button">M</button>
+            <button class="size-button" data-size="L" type="button">L</button>
+            <button class="size-button" data-size="XL" type="button">XL</button>
+            <button class="size-button" data-size="5" type="button">5</button>
+            <button class="size-button" data-size="5.5" type="button">5.5</button>
+
+            <button class="size-button" data-size="6" type="button">6</button>
+            <button class="size-button" data-size="6.5" type="button">6.5</button>
+            <button class="size-button" data-size="7" type="button">7</button>
+            <button class="size-button" data-size="7.5" type="button">7.5</button>
+            <button class="size-button" data-size="8" type="button">8</button>
+            <button class="size-button" data-size="8.5" type="button">8.5</button>
+
+            <button class="size-button" data-size="9" type="button">9</button>
+            <button class="size-button" data-size="9.5" type="button">9.5</button>
+            <button class="size-button" data-size="10" type="button">10</button>
+            <button class="size-button" data-size="10.5" type="button">10.5</button>
+            <button class="size-button" data-size="11" type="button">11</button>
+            <button class="size-button" data-size="11.5" type="button">11.5</button>
+
+            <button class="size-button" data-size="12" type="button">12</button>
+            <button class="size-button" data-size="12.5" type="button">12.5</button>
+            <button class="size-button" data-size="13" type="button">13</button>
+            <button class="size-button" data-size="13.5" type="button">13.5</button>
+            <button class="size-button" data-size="14" type="button">14</button>
+            <button class="size-button" data-size="15" type="button">15</button>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-2">
+          <h2>COLOR</h2>
+
+          <div class="filter-list">
+            <label class="filter-option">
+              <input type="checkbox" data-group="colors" value="Black">
+              <span class="color-dot" style="background:#1c1d1e"></span>
+              Black
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="colors" value="Grey">
+              <span class="color-dot" style="background:#707a8b"></span>
+              Grey
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="colors" value="White">
+              <span class="color-dot" style="background:#ffffff"></span>
+              White
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="colors" value="Beige">
+              <span class="color-dot" style="background:#ffefba"></span>
+              Beige
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="colors" value="Red">
+              <span class="color-dot" style="background:#ff3340"></span>
+              Red
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="colors" value="Yellow">
+              <span class="color-dot" style="background:#ffc300"></span>
+              Yellow
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="colors" value="Green">
+              <span class="color-dot" style="background:#00a847"></span>
+              Green
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="colors" value="Blue">
+              <span class="color-dot" style="background:#307bf3"></span>
+              Blue
+            </label>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-xl-2">
+          <h2>PRICE</h2>
+
+          <div class="filter-list">
+            <label class="filter-option">
+              <input type="checkbox" data-group="prices" value="Under $75">
+              Under $75
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="prices" value="$76 - $100">
+              $76 - $100
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="prices" value="$101 - $125">
+              $101 - $125
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="prices" value="$126 - $150">
+              $126 - $150
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="prices" value="Over $150">
+              Over $150
+            </label>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-6 col-xl-3">
+          <h2>PRODUCT TYPE</h2>
+
+          <div class="filter-list">
+            <label class="filter-option">
+              <input type="checkbox" data-group="types" value="Everyday Sneakers">
+              Everyday Sneakers
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="types" value="Flats">
+              Flats
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="types" value="Running Shoes">
+              Running Shoes
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="types" value="Slip Ons">
+              Slip Ons
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="types" value="Slippers">
+              Slippers
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="types" value="Socks">
+              Socks
+            </label>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-6 col-xl-2">
+          <h2>MATERIAL</h2>
+
+          <div class="filter-list">
+            <label class="filter-option">
+              <input type="checkbox" data-group="materials" value="Alternative-Leather">
+              Alternative-Leather
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="materials" value="Canvas">
+              Canvas
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="materials" value="Cotton">
+              Cotton
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="materials" value="Sugar">
+              Sugar
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="materials" value="Tree">
+              Tree
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" data-group="materials" value="Wool">
+              Wool
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p id="emptyState" class="empty-state" hidden>
+      No products match these filters.
+    </p>
+
+
+    <a id="productGrid" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xxl-4 g-3 g-lg-4"
+      href="${product.url}"></a>
+  </main>
+
+
+
+
+
+
+
+
+  <section class="featured-categories py-4">
+    <div class="container-fluid px-3">
+      <div class="row g-3">
+        <!-- Card 1 -->
+        <div class="col-12 col-lg-4">
+          <article class="feature-card">
+            <img src="img/befor.footer1.png" alt="">
+
+            <div class="feature-card__content">
+              <h2>Summer Travel Essentials</h2>
+
+              <div class="feature-card__buttons">
+                <a href="AllMen.html" class="feature-button">Shop Men</a>
+                <a href="AllWomen.html" class="feature-button">Shop Women</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-lg-4">
+          <article class="feature-card">
+            <img src="img/befor.footer2.png" alt="">
+
+            <div class="feature-card__content">
+              <h2>New Arrivals</h2>
+
+              <div class="feature-card__buttons">
+                <a href="AllMen.html" class="feature-button">Shop Men</a>
+                <a href="AllWomen.html" class="feature-button">Shop Women</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-lg-4">
+          <article class="feature-card">
+            <img src="img/befor.footer3.png" alt="">
+
+            <div class="feature-card__content">
+              <h2>Fresh Colors For Summer</h2>
+
+              <div class="feature-card__buttons">
+                <a href="AllWomen.html" class="feature-button feature-button--full">Shop Women</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <section class="info-section py-5">
+    <div class="container-fluid px-3">
+      <div class="row g-3">
+        <div class="col-12 col-lg-4">
+          <article class="info-card">
+            <h3>Easy All-Day Wear</h3>
+            <p>Light, cushioned and easy to slip on. Novart shoes are designed for long walks, busy days and everything in between.</p>
+          </article>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <article class="info-card">
+            <h3>Made With Care</h3>
+            <p>This is a concept store with sample products. In a real project, this block would describe the brand's approach to responsible production and shipping.</p>
+          </article>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <article class="info-card">
+            <h3>Honest Materials</h3>
+            <p>Sample copy: soft, breathable materials chosen for comfort and durability. Replace this text with the real details of your own products.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <div id="footer-placeholder"></div>
+
+
+
+
+
+
+
+
+
+
+  <script src="js/bag.js" defer></script>
+  <script src="js/footer.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <div class="demo-banner" role="note"><strong>Demo store</strong><span>Portfolio concept, not a real shop. No orders or payments are processed.</span></div>
+</body>
+
+</html>

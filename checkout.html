@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/checkout.css">
+  <title>Novart Demo Store: Checkout</title>
+  <link rel="stylesheet" href="css/demo-banner.css">
+</head>
+
+<body>
+  <header class="checkout-header">
+    <a href="index.html" class="checkout-logo"><img src="img/logo.trans.png" alt=""></a>
+  </header>
+
+  <main class="checkout-layout">
+    <section class="checkout-form-side">
+      <div class="checkout-content">
+        <div class="demo-checkout-note">
+          <strong>Demo checkout.</strong> This is a portfolio concept, not a real store.
+          No payment, address or personal details are collected and no order is placed.
+        </div>
+
+        <h2>Contact</h2>
+        <p class="demo-static">customer@example.com <small>(sample)</small></p>
+
+        <h2 class="mt-4">Delivery</h2>
+        <p class="demo-static">Sample Customer<br>1 Example Street<br>00-000 Sample City</p>
+
+        <h2 class="mt-4">Payment</h2>
+        <p class="demo-static">Payments are disabled in this demo store.</p>
+
+        <button class="btn btn-dark w-100 py-3 mt-4 fw-bold" type="button" id="demoOrderBtn">
+          Place demo order
+        </button>
+
+        <p class="demo-order-message" id="demoOrderMessage" hidden>
+          Demo only: no order was placed and nothing was charged.
+        </p>
+      </div>
+    </section>
+
+    <aside class="checkout-summary-side">
+      <div class="checkout-summary">
+        <div id="checkoutProducts"></div>
+
+        <div class="summary-line">
+          <span>Subtotal · <span id="checkoutItemCount">0</span> items</span>
+          <span id="checkoutSubtotal">$0.00</span>
+        </div>
+
+        <div class="summary-line">
+          <span>Shipping</span>
+          <span id="checkoutShipping">FREE</span>
+        </div>
+
+        <div class="summary-total">
+          <span>Total</span>
+
+          <span>
+            <small>USD</small>
+            <strong id="checkoutGrandTotal">$0.00</strong>
+          </span>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+
+
+
+
+
+  <script src="js/checkout.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <div class="demo-banner" role="note"><strong>Demo store</strong><span>Portfolio concept, not a real shop. No orders or payments are processed.</span></div>
+</body>
+
+</html>
